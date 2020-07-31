@@ -1,0 +1,29 @@
+.large_button{
+    background-color: #00CB6E;
+    color: #fff;
+    padding: 10px;
+    width: 180px;
+    border: 0;
+    border-radius: 15px
+}
+.large_button:focus{
+    outline-color: #00CB6E
+}
+
+.round_button{
+    outline-color: #00CB6E;
+    background-color: #00CB6E;
+    border: 0px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+.round_button:focus{
+    outline-color: #00CB6E
+}

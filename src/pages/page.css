@@ -1,0 +1,149 @@
+.light_drag{
+    background-color: #EAFEF5;
+    width: 300px;
+    height: 40vh;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upload_area{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 20px;
+ border: 1px solid #00CB6E;
+ padding: 20px;
+ height: 70vh;
+ overflow: hidden;
+ border-radius: 20px
+}
+
+.upload_input{
+    border: 1px solid #00CB6E
+}
+
+.normal_input{
+    border: 1px solid #00CB6E;
+    color: #00CB6E;
+    border-radius: 10px;
+    padding: 7px
+}
+.normal_input:focus{
+    outline-color: #00CB6E;
+}
+.schedule_flex_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.recipient_email_input{
+    height: 40vh;
+    width: 350px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #00CB6E;
+    border: 1px solid #00CB6E
+}
+
+.text_area_container{
+        display:flex;
+        height:100%;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+}
+.text_area_container:focus {
+    outline-color: #00CB6E;
+}
+.moment_input{
+    margin: 5px
+}
+
+.selected_button{
+    background-color: #00CB6E;
+    color: #fff;
+    font-weight: bold
+}
+
+.heading_two{
+    color:#00CB6E;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px
+}
+
+.report_display{
+    border: 1px solid #00CB6E;
+    min-width: 80vw;
+    overflow: scroll;
+}
+
+
+.report_display thead{
+    background-color: #EAFEF5;
+    color: #00CB6E
+}
+.report_container{
+    display: flex;
+    justify-content: center;
+    overflow: scroll
+}
+
+.report_display tbody tr, .report_display tbody td{
+    border: 1px solid #00CB6E
+}
+
+.center_text{
+    text-align: center
+}
+small{
+    font-size: 15px
+}
+.report_display tbody td, .report_display thead th{
+    padding: 5px
+}
+.small_button{
+    background-color: #00CB6E;
+    border: 0px;
+    color: #fff;
+    width: 60px;
+    margin: 2px;
+    font-size: 13px;
+    padding: 5px
+}
+.buttom_but_cont{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    margin: 10px;
+    width: 90vw
+}
+
+.logo_buttin_house{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    height: 80vh;
+    padding-left: 50px
+}
+.mobile_row{
+   display: none
+}
+@media only screen and (max-width: 778px) {
+    .logo_col, .drag_text{
+        display: none;
+    }
+    .upload_input{
+        width: 80%
+    }
+    .mobile_row{
+        display: block
+     }
+  }

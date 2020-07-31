@@ -1,0 +1,5 @@
+export const UPLOAD_FILE = 'UPLOAD_FILE';
+export const SEND_REPORT_SUCCESS = 'SEND_REPORT_SUCCESS';
+export const SEND_REPORT_FAILED = 'SEND_REPORT_FAILED';
+export const SET_TIME_ZONE = 'SET_TIME_ZONE';
+export const GET_REPORT = 'GET_REPORT';

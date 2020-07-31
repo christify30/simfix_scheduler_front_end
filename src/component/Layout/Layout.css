@@ -1,0 +1,24 @@
+.main_nav{
+    background-color: #00CB6E;
+    display: flex;
+    align-items: center;
+    padding: 20px
+}
+.content_section{
+    padding: 10px
+}
+.time_zone{
+   position: absolute;
+   right: 15px;
+}
+.time_zone_select{
+    margin: 5px;
+    border-width: 0;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 778px) {
+   .time_zone_select{
+       width: 120px
+   }
+  }

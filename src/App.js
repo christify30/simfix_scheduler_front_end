@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import MainLayout from './component/Layout/MainLayout';
+import Pages from './pages';
+const { Schedules, UploadReport, ScheduleDetails } = Pages;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <MainLayout>
+          <Route exact path="/schedules" component={Schedules}/>
+          <Route exact path="/" component={UploadReport}/>
+          <Route exact path="/schedule_details" component={ScheduleDetails}/>
+        </MainLayout>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
